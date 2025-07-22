@@ -1,0 +1,6 @@
+#site {
+  min-height: 100vh;
+  background: var(--primary-bg);
+  color: var(--text-white);
+  font-family: var(--font-family);
+} 

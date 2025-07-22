@@ -1,0 +1,33 @@
+
+html, body {
+  /* Vue things */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+:root {
+  /* Custom cursor */
+  --cursor-x: 50vw;
+  --cursor-y: 50vh;
+  --cursor-size: 250px;
+  
+  /* Colors */
+  --primary-bg: #028049;
+  --text-white: #fff;
+  --text-black: #000;
+  
+  /* Typography */
+  --font-family: 'Inter', Arial, sans-serif;
+  --font-size-nav: 1.1rem;
+  --font-size-bg-text: 6rem;
+  
+  /* Spacing */
+  --nav-gap: 2rem;
+  --nav-padding: 2rem;
+  
+  /* Layers */
+  --z-background: 1;
+  --z-cursor: 5;
+  --z-navbar: 10;
+} 

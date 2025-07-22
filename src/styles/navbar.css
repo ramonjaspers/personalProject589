@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  top: var(--nav-padding);
+  right: var(--nav-padding);
+  display: flex;
+  gap: var(--nav-gap);
+  z-index: var(--z-navbar);
+}
+
+.nav-link {
+  position: relative;
+  color: var(--text-white);
+  font-size: var(--font-size-nav);
+  text-decoration: none;
+  transition: color 0.3s ease-out;
+}
+
+.nav-link:hover {
+  color: var(--text-black);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--text-white);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}

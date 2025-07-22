@@ -1,0 +1,26 @@
+.cursor-glow {
+  position: fixed;
+  top: var(--cursor-y);
+  left: var(--cursor-x);
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.06) 5%,
+      rgba(255, 255, 255, 0.04) 10%,
+      rgba(255, 255, 255, 0.02) 15%,
+      rgba(255, 255, 255, 0.01) 20%,
+      rgba(255, 255, 255, 0.005) 25%,
+      rgba(255, 255, 255, 0.002) 30%,
+      rgba(255, 255, 255, 0.001) 35%,
+      rgba(255, 255, 255, 0.0005) 40%,
+      rgba(255, 255, 255, 0.0002) 45%,
+      rgba(255, 255, 255, 0.0002) 50%,
+      transparent 60%);
+  z-index: var(--z-cursor);
+  transition: top 0.15s linear, left 0.15s linear;
+  filter: blur(1px);
+}
